@@ -26,6 +26,141 @@ body{
   /* height: 100vh; */
   background: #1c1c1c;
 }
+html{
+  overflow-x: hidden;
+}
+
+
+/* =====Header css===== */
+.header-logo img {
+  width: 160px;
+}
+.start-head h2 {
+  color: #fff;
+  font-family: 'Arges';
+  font-size: 5em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+
+
+.start-head.touch{
+  text-align: right;
+}
+
+.start-head.touch H3 {
+  font-family: 'PP Mori';
+  color: #E5E1D8;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.header-logo {
+  text-align: center;
+}
+
+
+.current-time p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'PP Mori';
+}
+
+
+
+
+/* MAIN BANNER */
+
+div#banner-home{
+  background-color: #1c1c1c;
+  /* height: 100vh; */
+  padding: 20px;
+background-image: url(/public/images/second-bg.png);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+}
+
+.content-area img{
+  width: 30%;
+  padding-bottom: 20px;
+}
+
+.container.main-banner {
+padding: 70px 0px;
+}
+
+.content-area h2 {
+  color: #E5E1D8;
+  font-family: 'PP Mori';
+  font-weight: 100;
+  font-size: 2.6em;
+}
+
+span.name {
+  font-family: 'Bodoni';
+  font-weight: 100;
+}
+
+
+
+.container.main-story {
+  padding-top: 100px;
+}
+.Branding p {
+  color: #fff;
+  font-size: 24px;
+}
+
+.Branding h2 {
+color: #fff;
+font-family: 'Arges';
+font-size: 4.5em;
+font-weight: 900;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+.Branding h3 {
+color: #E5E1D8;
+font-weight: 100;
+font-family: 'PP Mori';
+}
+span.second-fam {
+font-family: 'PPultralight';
+}
+
+span.first-fam {
+font-family: 'Bodoni';
+font-weight: 100;
+text-transform: lowercase;
+}
+
+.bg-div {
+text-align: center;
+}
+.bg-div img {
+width: 250px;
+}
+.bg-div > img {
+animation: rotate-animation 10s infinite linear;
+}
+
+@keyframes rotate-animation {
+0% {
+  transform: rotate(0deg);
+}
+50% {
+  transform: rotate(180deg);
+}
+100% {
+  transform: rotate(360deg);
+}
+}
 
 
 
@@ -206,6 +341,7 @@ section#design{
   display: flex;
   justify-content: space-between;
   padding: 0px 24px;
+  border-bottom: 1px solid #ffffff40;
 }
 .options {
   display: flex;
@@ -599,4 +735,229 @@ section#call_to_action{
     top: -92px;
   }
   
+}
+
+
+/* horizontal section css
+ */
+
+
+section#our-projects{
+  z-index: 999999;
+  background-color: #000;
+}
+
+.trigger {
+  position: absolute;
+}
+.trigger--one {
+  left: 0;
+}
+
+.scene {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.scene--active {
+  position: fixed;
+}
+.scene--ended {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+}
+
+.horizontal-scroll-section {
+  position: relative;
+  min-height: 100vh;
+  opacity: 0;
+  transition: 0.2s opacity;
+}
+.horizontal-scroll-section img {
+  display: block;
+  max-height: 80%;
+  width: auto;
+}
+.horizontal-scroll-section--init {
+  opacity: 1;
+}
+.horizontal-scroll-section__content {
+  display: flex;
+  align-items: center;
+}
+.horizontal-scroll-section__content-wrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  position: relative;
+  color: #fff;
+}
+.horizontal-scroll-section__content-section {
+  position: relative;
+  min-width: 60vw;
+  
+  padding: 0 40px;
+  height: auto;
+
+}
+.horizontal-scroll-section__image {
+  display: flex;
+  align-items: center;
+}
+.horizontal-scroll-section__image h2 {
+  margin-left: 20px;
+  width: 250px;
+  text-align: left;
+  flex-shrink: 0;
+}
+.horizontal-scroll-section__image--two img {
+  max-width: 400px;
+}
+.horizontal-scroll-section__image--four img {
+  max-width: 400px;
+}
+.horizontal-scroll-section--animation-one .horizontal-scroll-section__image--two {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+section#our-projects {
+  background: #474bd4;
+  background-image: url(/public/images/footer-ovrly.png);
+}
+
+.capabilities.selects h2 {
+  color: #fff;
+}
+.capabilities.selects p {
+  color: #fff;
+}
+
+.design-page {
+  text-align: right;
+}
+
+.design-page h2 {
+  color: #fff;
+  font-family: 'Arges';
+  font-size: 5em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+p.project_c {
+  color: #e5e1d8;
+  font-family: 'Arges';
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+h2.project_dev {
+  font-family: 'Arges';
+  font-size: 6em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+p.project-desc {
+  font-family: 'PP Mori';
+  font-size: 28px;
+}
+
+
+/* STATS CSS */
+
+.top-squares-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.culture-section {
+pointer-events: none;
+}
+
+.key-stat-square, .div-block-39 {
+  width: 443px;
+  height: 444px;
+}
+.key-stat-square {
+  border: 1px solid #666;
+
+}
+
+.key-stat-square {
+
+flex-direction: column;
+justify-content: space-between;
+
+padding: 30px;
+display: flex;
+position: relative;
+}
+
+.div-block-42 {
+display: flex;
+}
+.key-stat-text {
+opacity: .4;
+color: #fff;
+flex: 0 auto;
+width: 100%;
+font-family: Helveticanowdisplay, sans-serif;
+font-size: 16px;
+font-weight: 500;
+}
+.key-stat-text.key-stat-number {
+width: auto;
+}
+
+.div-block-43 {
+flex-direction: column;
+display: flex;
+}
+.text-block-14 {
+  margin-bottom: 24px;
+  font-size: 32px;
+}
+.text-block-14 {
+opacity: .4;
+color: #fff;
+margin-bottom: 16px;
+
+font-size: 24px;
+line-height: 32px;
+}
+.text-block-15 {
+  letter-spacing: -1.92px;
+  font-size: 96px;
+  line-height: 80px;
+}
+
+.text-block-15 {
+color: #fff;
+
+font-size: 64px;
+font-weight: 500;
+line-height: 55px;
+}
+.text-block-16 {
+  letter-spacing: -.64px;
+  width: 744px;
+  font-size: 60px;
+  line-height: 93.75%;
+}
+.text-block-16 {
+color: #fff;
+flex: 0 auto;
+width: 575px;
+
+font-size: 48px;
+font-weight: 500;
+line-height: 44px;
+position: absolute;
+top: 50%;
+left: 75%;
+transform: translate(0, -50%);
 }

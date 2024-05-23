@@ -35,7 +35,7 @@ const Footer =()=>{
                         <div className="input_form">
                             <input type="text" placeholder="{ 01 }        YOUR NAME"/><br/>    
                             <input type="email" placeholder="{ 02 }       YOUR WORKING MAIL"/>
-                            <textarea class="form-control" rows="5" placeholder="{ 03 }        Tell us about your Project and above all your Problem cause that’s where it all Starts...." required></textarea>
+                            <textarea className="form-control" rows="5" placeholder="{ 03 }        Tell us about your Project and above all your Problem cause that’s where it all Starts...." required></textarea>
 
                             <button className="submit-btn">Here we go! Bam!</button>
                         </div>
