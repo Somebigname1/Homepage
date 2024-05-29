@@ -68,19 +68,8 @@ const HorizonatalSection = () => {
            </div>
           </div>
 
-          <div className="horizontal-scroll-section__content-section">
-           <p className="project_c">Project Catagories</p>
-           <h2 className="project_dev">Direction Design Development
-           </h2>
-           <p className="project-desc">Pumpkin trunks mcgonagall full nearly-headl<br/> mimubulus parvati. Is knew witch lupin <br/>dagger your seeker grindlewald stroke. Giant ridgeback<br/> gringott it the stan brass. Newt got nose find<br/> creature you bludger. Kittens forest.</p>
-            </div>
-            <div className="horizontal-scroll-section__content-section">
-           
-           <div className="project-picture">
-         
-              <img src={"images/project.png"}/>
-           </div>
-          </div>
+      
+       
             
           </div>
         </div>

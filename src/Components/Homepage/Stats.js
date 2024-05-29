@@ -1,73 +1,69 @@
-const Stats =()=>{
+const Stats = ()=>{
     return(
         <>
-        <section className="stats-section">
-        <div class="top-squares-wrapper">
-        <div class="key-stat-square">
-            <div class="div-block-42">
-                <div class="key-stat-text">KEY STAT</div>
-                <div class="key-stat-text key-stat-number">01</div>
-            </div>
-            <div class="div-block-43">
-                <div class="text-block-14">Countries</div>
-                <div data-w-id="3cb718e7-bd35-53df-3e3a-1363b8a177e6" style={{opacity: '1'}} class="text-block-15">08</div>
-            </div>
-            <div class="text-block-16">
-                <div class="overflow-heading-block">
-                    <div data-w-id="4e358b62-cf22-b96c-3c7d-dbad4d5b7982"
+        <section id="stats">
+            <div className="container analytics">
+                <div className="row">
+                    <div className="col-lg-6 lime">
+                      <div className="upper-data">
+                        <h2>Projects Success Rate</h2>
+                        <img src={"images/right-arrow.png"}/>
+                      </div>
+                      <div className="number-data">
+                        <h2>96%</h2>
+                      </div>
+                    </div>
+                    <div className="col-lg-3 white">
+                    <div className="upper-data">
+                        <h2>Followers</h2>
+                        <img src={"images/right-arrow.png"}/>
+                      </div>
+                      <div className="number-data">
+                        <h2>50.3K</h2>
+                      </div>
+                    </div>
+                    <div className="col-lg-3 pink">
+                   
+                      <div className="number-data">
+                   
+                      <h2>7.6M</h2>
+                      </div>
+                      <div className="upper-data top-border">
                         
-                        class="header-move-block">
-                        <div class="first-heading-row">We're a squad of <span class="blue-text">badass </span></div>
+                      <h2>Design Views</h2>
+                      <img src={"images/right-arrow.png"}/>
+                      </div>
                     </div>
                 </div>
-                <div class="overflow-heading-block">
-                    <div data-w-id="8a93c657-e20a-f0b0-d0e1-943055df5b63"
-                        
-                        class="header-move-block">
-                        <div class="text-block-26"><span class="blue-text">creatives</span> who love a good</div>
+                <div className="row">
+                    <div className="col-lg-3 simple-white">
+                      <div className="upper-datas">
+                     <h3>5 +</h3>
+                     <img src={"images/right-arrow.png"}/>
+                     <h4>Years Expertise</h4>
+                      </div>
                     </div>
-                </div>
-                <div class="overflow-heading-block">
-                    <div data-w-id="b8924e2e-94a1-2f68-80c4-e85700622a30"
-                        
-                        class="header-move-block">
-                        <div class="text-block-25">challenge</div>
+                    <div className="col-lg-3 white-logo">
+                    <div className="stats-logo">
+                        <img src={"images/Logo.png"}/>
+                        <p>namaskara@somebigname.com</p>
+                     </div>
                     </div>
-                </div>
-            </div>
-            <div class="text-block-16 mobile-only">
-                <div class="overflow-heading-block">
-                    <div data-w-id="03afaff3-ee59-afc3-df4a-59786f6b6172"
-                        
-                        class="header-move-block">
-                        <div class="text-block-29">We're a squad of</div>
-                    </div>
-                </div>
-                <div class="overflow-heading-block">
-                    <div data-w-id="03afaff3-ee59-afc3-df4a-59786f6b6179"
-                        
-                        class="header-move-block">
-                        <div class="text-block-26"><span class="blue-text">badass creatives</span></div>
-                    </div>
-                </div>
-                <div class="overflow-heading-block">
-                    <div data-w-id="03afaff3-ee59-afc3-df4a-59786f6b617f"
-                        
-                        class="header-move-block">
-                        <div class="text-block-28">who love a good</div>
-                    </div>
-                </div>
-                <div class="overflow-heading-block">
-                    <div data-w-id="b5d622fb-7ab0-4789-6fad-4430b15a416b"
-                        
-                        class="header-move-block">
-                        <div class="text-block-27">challenge<span class="blue-text"></span></div>
+                    <div className="col-lg-6 blue">
+                    <div className="upper">
+                        <h3>Designs</h3>
+                        <h4>375+</h4>
+                      </div>
+                      <p>/</p>
+                      <div className="number-datas">
+                        <h2>Generated <br/> 4.8k Plus Leads</h2>
+                      </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="div-block-39"></div>
-    </div>
+
+
+   
         </section>
         </>
     )
