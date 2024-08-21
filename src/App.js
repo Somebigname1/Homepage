@@ -23,18 +23,21 @@ function App() {
     <MainBanner/>
   
  <WhoWeAre/>
- <HorizonatalSection/>
- 
-
-<Started/>
-
-<WhatWeDo/>
-
-
-<Service/>
+ <Started/>
+ <WhatWeDo/>
+ <Service/>
 
 <Consulting/>
 <Development/>
+ <HorizonatalSection/>
+ 
+
+
+
+
+
+
+
 <Stats/>
 <CallToAction/>
 

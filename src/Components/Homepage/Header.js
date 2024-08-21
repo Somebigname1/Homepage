@@ -29,7 +29,7 @@ const Header = () => {
                         <div className="col-lg-5">
                             <div className="start-head">
 <DateTimeDisplay/>
-<h2>Let's Start</h2>
+<img className="main_logo" src={"images/Logo.png"}/>
                             </div>
                         </div>
 
@@ -74,7 +74,7 @@ const Header = () => {
 <div className="col-lg-5">
                             <div className="start-head touch">
 <h3>&#123;Email: Hi@somebigname.com&#125;</h3>
-<h2>Get in Touch</h2>
+<h2><a style={{textDecoration:"none", color:"#fff"}} target="_blank" href="https://tally.so/r/3EX9Y2">Let's start</a></h2>
                             </div>
                         </div>
                     </div>

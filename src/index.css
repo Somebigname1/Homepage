@@ -43,7 +43,9 @@ html{
   font-weight: 900;
 }
 
-
+img.main_logo {
+  width: 30%;
+}
 
 .start-head.touch{
   text-align: right;
@@ -592,13 +594,13 @@ span.e-mail {
 
 .social-icons {
   width: 100%;
-  /* height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: start;
   margin-bottom: 14px;
 }
-.social-icons a{
+
+.social-icons a {
   text-decoration: none;
 }
 
@@ -614,19 +616,18 @@ span.e-mail {
   border-radius: 50%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
   text-decoration: none;
-  transition: all 0.8s ease; /* Added transition for all properties */
+  transition: all 0.8s ease;
+  flex-shrink: 0;
 }
 
 .social-icon.blurred {
   filter: blur(3px);
 }
 
-
 .social-icon i {
   margin: auto;
   font-size: 18px;
   color: #E5E1D8;
-
   z-index: 1;
   transition: var(--trans-property);
 }
@@ -641,12 +642,9 @@ span.e-mail {
   transition: var(--trans-property);
 }
 
-
-
 .social-icon.dribbble:after {
   background-color: #C9FF40;
 }
-
 
 /*** Animations ***/
 .social-icon:hover {
@@ -662,6 +660,21 @@ span.e-mail {
 .social-icon:hover:after {
   transform: translate(0) scale(1.2);
 }
+
+/* Ensure the icons remain circular on smaller screens */
+@media (max-width: 768px) {
+  .social-icon {
+    width: var(--link-size);
+    height: var(--link-size);
+    border-radius: 50%; 
+  }
+}
+
+/* Blur effect for hovered and non-hovered icons */
+.social-icon.blurred:not(:hover) {
+  filter: blur(3px);
+}
+
 
 .links_top a {
   color: #c9ff40;
@@ -783,6 +796,7 @@ section#our-projects{
 }
 .horizontal-scroll-section--init {
   opacity: 1;
+  background: #474bd4;
 }
 .horizontal-scroll-section__content {
   display: flex;
@@ -988,9 +1002,9 @@ a.connects {
     padding: 20px;
 }
 section#stats {
-  BACKGROUND: #000;
-  Z-INDEX: 9999999999999;
-  POSITION: RELATIVE;
+  background-color: #000;
+  z-index:  9999999999999;
+ position: relative;
   padding: 150px 0px;
   background-image: url(/public/images/footer-ovrly.png);
 }
